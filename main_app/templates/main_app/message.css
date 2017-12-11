@@ -1,0 +1,495 @@
+body{
+    background: url("images/background.jpg") center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+#wrapper{
+    background-color: rgba(231, 217, 214, 0.5);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-width: 3px;
+    border-color: white;
+    border-style: dashed;
+    border-radius: 30px;
+    margin: 43px 183px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 100px;
+}
+
+
+#ropet{
+	position: fixed;
+    color: rgba(255, 255, 255, 0.7);
+    width: auto;
+    height: 100px;
+    line-height: 0.8;
+    text-transform: uppercase;
+    text-shadow: 0 0 40px rgba(170,72,0,1);
+    font-family: "impact", fantasy, sans-serif, "Times New Roman",Georgia,Serif;
+    font-size: 300%;
+    font-weight: bolder;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    top: 4em;
+    left: 19.8em;
+}
+
+h1{
+    font-size: 436%;
+    font-style: italic;
+}
+
+#text1{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.intro{
+    font-size: 225%;
+    font-weight: bolder;
+    font-family: "Bitstream Charter", serif;
+    font-style: italic;
+}
+
+#control{
+    background-image: -webkit-linear-gradient(top, rgba(231, 217, 214,0), rgba(231, 217, 214,0.2) 24%, rgba(231, 217, 214, 0.7) 54%, rgba(231, 217, 214,1));
+    padding-bottom: 70px;
+    border-width: 3px;
+    border-color: white;
+    border-style: dashed;
+    border-radius: 30px;
+}
+h2{
+    font-size: 202%;
+    margin-top: 39px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+button{
+    font-size: 200%;
+    background-color: antiquewhite;
+    font-family:"Arial";
+    border:0;
+    vertical-align:middle;
+    line-height:18px;
+    border-width: 3px;
+    border-color: white;
+    border-style: solid;
+    position: relative;
+}
+
+.idle:hover{
+    cursor:pointer;
+    background-color: bisque;
+    font-weight: bolder;
+}
+
+#forward{
+    left: 150px;
+    padding: 26px 19px;
+    font-weight: 300;
+    border-radius: 52px;
+}
+
+#backward{
+    left: 149px;
+    top: 41px;
+    padding: 26px 19px;
+    font-weight: 300;
+    border-radius: 52px;
+}
+
+#left{
+    left: 53px;
+    top: 20px;
+    padding: 26px 19px;
+    font-weight: 300;
+    border-radius: 52px;
+}
+
+#right{
+    left: 87px;
+    top: 20px;
+    padding: 26px 19px;
+    font-weight: 300;
+    border-radius: 52px;
+}
+
+#down{
+    left: 382px;
+    top: 41px;
+    padding: 25px;
+    font-weight: bolder;
+    border-radius: 52px;
+}
+
+#up{
+    left: 382px;
+    padding: 20px 24px 30px 25px;
+    font-weight: bolder;
+    border-radius: 52px;
+}
+
+#start{
+    left: 364px;
+    bottom: 129px;
+    padding: 25px 22px;
+    font-weight: bolder;
+    border-radius: 52px;
+}
+
+#stop{
+    font-size: 150%;
+    left: 71px;
+    top:20px;
+    padding: 25px 24px;
+    font-weight: 600;
+    border-radius: 52px;
+}
+#quit{
+    left: 481px;
+    bottom: 129px;
+    padding: 25px 20px;
+    font-weight: bolder;
+    border-radius: 52px;
+}
+
+#record{
+    font-size: 189%;
+    left: 101px;
+    top:20px;
+    padding: 25px 17px 25px 22px;
+    font-weight: 600;
+    border-radius: 52px;
+}
+
+#stop_record{
+    font-size: 200%;
+    left: 152px;
+    top:20px;
+    padding: 25px 20px;
+    font-weight: 600;
+    border-radius: 52px;
+}
+
+#blt_on{
+    left: 207px;
+    top:20px;
+    padding: 19px 19px;
+    font-weight: 600;
+    border-radius: 52px;
+}
+
+#blt_off{
+    left: 260px;
+    top:20px;
+    padding: 19px 19px;
+    font-weight: 600;
+    border-radius: 52px;
+}
+
+span{
+    float: left;
+    width: 50px;
+    height: 40px;
+    text-align: center;
+    line-height: 51px;
+    font-size: 260%;
+    font-weight: bold;
+}
+
+
+nav a:link{
+    text-decoration: none;
+    color: black;
+}
+
+h1#kingdom{
+    font-family: Georgia, serif;
+    font-weight: bolder;
+    font-size: 290%;
+    margin-left: 163px;
+    margin-top: 101px;
+    color: rgba(255, 73, 102, 1);
+    text-shadow: 5px 5px 9px #cF0000;
+}
+
+#kingdom1{
+    font-family: Georgia, serif;
+    font-weight: bolder;
+    font-size: 244%;
+    margin-left: 35px;
+    margin-top: 40px;
+    color: rgba(255, 73, 102, 0.8);
+    text-shadow: 5px 5px 9px #FF4966;
+}
+
+.desc{
+    text-align: justify;
+    font-style: italic;
+    font-family: adelle-1, adelle-2, Georgia, "Bitstream Charter", serif;
+    font-size: 131%;
+}
+
+#hide_desc{
+    margin-left: 433px;
+    text-decoration: underline;
+}
+
+.pop{
+    background-color: rgba(250, 128, 114,0.3);
+    padding-top: 0px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 20px;
+    margin: auto;
+    width: 482px;
+    border-style: dashed;
+    border-radius: 5px;
+	border-color: white;
+	border-width: 2px;
+}
+
+
+video#video{
+	background-color: rgba(250, 128, 114,0.3);
+	padding: 10px;
+	margin-bottom: 38px;
+	margin-left: 66px;
+	border-style: dashed;
+	border-radius: 5px;
+	border-color: white;
+	border-width: 2px;
+}
+
+section#welcome{
+    margin-top: 100px;
+    padding-top: 55px;
+	padding-left: 60px;
+    border-top: dashed;
+    border-color: white;
+    border-width: 2px;
+}
+
+section#welcome img#apple{
+	float: right;
+}
+
+#sect h1,.h1style{
+	font-family: adelle-1, adelle-2, Georgia, "Bitstream Charter", serif;
+	font-style: italic;
+	padding-top: 40px;
+	padding-left: 30px;
+    font-weight: bolder;
+    font-size: 170%;
+}
+
+
+a{
+	text-decoration: none;
+	color: black;
+}
+
+.h1style{
+	color: rgba(255, 105, 180, 0.5);
+}
+
+section#welcome p#hide{
+    font-family: adelle-1, adelle-2, Georgia, "Bitstream Charter", serif;
+    font-style: italic;
+    font-size: 100%;
+    margin-left: 40px;
+    margin-top: -15px;
+}
+
+#hide a,#hide_list a{
+    text-decoration: underline;
+}
+
+
+section#welcome div#detail{
+    text-align: justify;
+	margin-left: 30px;
+    font-size: 120%;
+    margin-top: 30px;
+}
+
+section#farmer{
+	margin-top: 90px;
+    border-top: dashed;
+    border-color: white;
+    border-width: 2px;
+    padding-bottom: 60px;
+}
+
+section#farmer h1{
+    padding-top: 120px;
+}
+
+img#box{
+	float: left;
+	margin-top: 70px;
+    padding-left: 30px;
+    padding-right: 40px;
+    padding-bottom: 10px;
+}
+
+#farmer ul{
+    padding-left: 400px;
+}
+
+ul.list{
+    width: 475px;
+}
+
+ul.list li{
+    width: 237px;
+    float: left;
+    font-size: 105%;
+}
+
+#source{
+    line-height: 4px;
+}
+
+#source a{
+    text-decoration: underline;
+    font-style: italic;
+}
+
+#top,#back{
+    position: fixed;
+}
+
+#top{
+    bottom: 115px;
+    right: 132px;
+}
+#back{
+    bottom: 84px;
+    right: 152px;
+    font-size: 85%;
+}
+
+#footer{
+    background-color: rgba(255, 213, 215, 0.9);
+    text-align:       center;
+    padding:          15px;
+    margin: 0px 125px 10px 125px;
+    font-size:        90%;
+    border-width: 3px;
+    border-color: white;
+    border-style: dashed;
+    border-radius: 25px;
+}
+
+@media (max-width: 1250px) and (min-width: 1100px) {
+    #mascot{
+    position: absolute;
+    top: 100px;
+    left: 233px;
+}
+	nav ul{
+    margin-left: 80px;
+    margin-top: 142px;
+    margin-bottom: 100px;
+}
+    nav ul li {
+    text-transform: uppercase;
+    margin-left: 20px;
+    margin-top: 150px;
+    font-family: adelle-1, adelle-2, "Helvetica Neue", Arial, Helvetica, "Nimbus Sans L", sans-serif;
+    font-size: 125%;
+    text-shadow: 3px 3px 3px rgba(0,25,25,0.5);
+	display: inline;
+    color: inherit;
+}
+    nav ul li.visited{
+    color: white;
+    background-color: #c93435;
+    border-radius: 15px;
+    padding: 20px 5px;
+    text-shadow: none;
+	list-style: disc;
+}
+    h1#kingdom{
+    font-family: Georgia, serif;
+    font-weight: bolder;
+    font-size: 232%;
+    margin-left: 145px;
+    margin-top: 101px;
+    color: rgba(255, 73, 102, 1);
+    text-shadow: 5px 5px 9px #cF0000;
+}
+    video#video{
+	background-color: rgba(250, 128, 114,0.3);
+	padding: 10px;
+    margin-top: 30px;
+	margin-left: 100px;
+	border-style: dashed;
+	border-radius: 5px;
+	border-color: white;
+	border-width: 2px;
+}
+    #farmer ul{
+    padding-top: 20px;
+    padding-left: 283px;
+}
+}
+
+@media (max-width: 1100px) {
+    #mascot{
+    position: absolute;
+    left: 206px;
+    }
+    nav ul li {
+    margin-left: 10px;
+    font-size: 116%;
+}
+    nav ul{
+    margin-left: 49px;
+}
+    h1#kingdom{
+    font-size: 200%;
+    margin-left: 95px;
+}
+    video#video{
+	background-color: rgba(250, 128, 114,0.3);
+	padding: 10px;
+    margin-top: 30px;
+	margin-left: 8px;
+}
+    section#welcome img#apple{
+	float: none;
+}
+    img#box{
+	float: none;
+	margin-top: 70px;
+    padding-left: 30px;
+    padding-right: 40px;
+}
+    #farmer ul{
+    padding-left: 100px;
+}
+}
+
+
+@media (max-width: 970px) {
+    #mascot{
+    display: none;
+    }
+    nav ul{
+    margin-left: 0px;
+}
+    nav ul li {
+    margin-left: 6px;
+    font-size: 100%;
+}
+}
+
+

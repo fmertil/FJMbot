@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="ECE 5725 Final Project">
+  <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+  <meta name="author" content="Francois Mertil">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+<style>
+div.container {
+    width: 100%;
+    border: 1px solid gray;
+}
+
+header, footer {
+    padding: 1em;
+    color: gold;
+    background-color: black;
+    clear: left;
+    text-align: center;
+}
+
+nav {
+    float: left;
+    max-width: 160px;
+    margin: 0;
+    padding: 1em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+   
+nav ul a {
+    text-decoration: none;
+    color:black;
+}
+
+li a.active {
+  background-color: red;
+  color: white;
+}
+
+li a:hover:not(.active) {
+  background-color:  #555;
+  color: white;
+}
+
+
+
+article {
+    margin-left: 170px;
+    border-left: 1px solid gray;
+    padding: 1em;
+    overflow: hidden;
+}
+</style>
+</head>
+<body id="home">
+
+<div class="container">
+
+<header>
+   <h1>Personal Robot</h1>
+</header>
+  
+<nav>
+  <ul>
+    <li><a href="{% url 'index' %}">Overview</a></li>
+    <li><a href="motor.html">Motor Control</a></li>
+    <li><a href="video.html">Video</a></li>
+    <li><a href="temperature.html">Temperature</a></li>
+  </ul>
+</nav>
+
+<article>
+   
+  <p>bla lab labbbb       .</p>
+  <p> Blabkjfhuthhitoihitiot.</p>
+  <button class="button">&#8679;</button>
+</article>
+
+
+<footer><p>Copyright &copy; FJMbot 2017</p>
+<p>Contact: fjm83@cornell.edu
+</footer>
+
+</div>
+
+</body>
+</html>
+
+

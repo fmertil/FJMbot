@@ -1,0 +1,279 @@
+{% extends 'main_app/base.html' %}
+
+
+
+	{% load staticfiles%}
+	
+	
+{% block style %}
+
+.button {
+  display: inline-block;
+  padding: 25px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: black;
+  border: none;
+  border-radius: 25px;
+  box-shadow: 0 9px #999;
+  position: relative;
+}
+
+.button:hover {background-color: rgb(255,133,0)}
+
+.button:active {
+  background-color: red;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+article {
+    
+   padding: 75px 25px;
+    overflow: hidden;
+}
+
+
+
+#forward{
+
+    left: 150px;
+
+    padding: 26px 19px;
+
+    font-weight: 300;
+
+    border-radius: 25px;
+
+}
+
+
+
+#backward{
+
+    left: 149px;
+
+    top: 41px;
+
+    padding: 26px 19px;
+
+    font-weight: 300;
+
+    border-radius: 52px;
+
+}
+
+
+
+#left{
+
+    left: 53px;
+
+    top: 20px;
+
+    padding: 26px 19px;
+
+    font-weight: 300;
+
+    border-radius: 52px;
+
+}
+
+
+
+#right{
+
+    left: 87px;
+
+    top: 20px;
+
+    padding: 26px 19px;
+
+    font-weight: 300;
+
+    border-radius: 52px;
+
+}
+
+
+
+#down{
+
+    left: 382px;
+
+    top: 41px;
+
+    padding: 25px;
+
+    font-weight: bolder;
+
+    border-radius: 52px;
+
+}
+
+
+
+#up{
+
+    left: 382px;
+
+    padding: 20px 24px 30px 25px;
+
+    font-weight: bolder;
+
+    border-radius: 52px;
+
+}
+
+
+
+#start{
+
+    left: 364px;
+
+    bottom: 129px;
+
+    padding: 25px 22px;
+
+    font-weight: bolder;
+
+    border-radius: 52px;
+
+}
+
+
+
+#stop{
+
+    font-size: 150%;
+
+    left: 71px;
+
+    top:20px;
+
+    padding: 25px 24px;
+
+    font-weight: 600;
+
+    border-radius: 52px;
+
+}
+
+#quit{
+
+    left: 481px;
+
+    bottom: 129px;
+
+    padding: 25px 20px;
+
+    font-weight: bolder;
+
+    border-radius: 52px;
+
+}
+
+	{% endblock %}
+
+
+
+
+
+
+	
+{% block body %}
+	
+	
+
+<div id ="services" class="container-fluid text-center"  >
+	<div class="row">
+		<div class+"col-sm-8">
+<article>
+
+
+  <h2> MOTOR CONTROL</h2>
+
+
+<img src="http://10.148.4.66:8080/?action=stream" />
+
+</div>
+ <script scr="{% static 'command.js'%}"></script></script>   
+  </div>
+
+                    <div >
+                        
+
+  
+  
+ 
+                        <div id="control_icon">
+
+                            <div id = "first">
+
+                                <button type="button" id = "forward" class = " button glyphicon glyphicon-circle-arrow-up" style ="color:red" onclick = "forward();"></button>
+
+                                <button type="button" id = "up" class = "button glyphicon glyphicon-menu-up" style ="color:red" onclick="up();"></button>
+
+                            </div>
+
+                            <div id="second">
+
+                                <button type="button" id = "left" class = "button glyphicon glyphicon-circle-arrow-left" style ="color:red"onclick="left();"></button>
+
+                                <button type="button" id = "stop" class = "button glyphicon glyphicon-stop" style ="color:red"onclick="stop();"></button>
+
+                                <button type="button" id = "right" class = "button glyphicon glyphicon-circle-arrow-right" style ="color:red" onclick="right();"></button>
+
+                            </div>
+
+                            <div id="thrid">
+
+                                <button type="button" id = "backward" class = "button glyphicon glyphicon-circle-arrow-down" style ="color:red" onclick="backward();"></button>
+
+                                <button type="button" id = "down" class = "button glyphicon glyphicon-menu-down" style ="color:red" onclick="down();"></button>
+
+                            </div>
+
+                            <div id="fourth">
+
+                                <button type="button" id = "start" class = "button " style ="color:red" onclick="start();">&#8634</button>
+
+                                <button type="button" id = "quit" class = "button" style ="color:red" onclick="quit();">&#9672</button> 
+
+                            </div>
+
+                        </div> 
+                        </div>
+</article>
+
+
+<div>
+<?php
+    $last = exec('ls', $o, $r);
+    if ($r != 0)
+    {
+        print 'Error running command';
+        exit($r);
+    }
+    else
+        print implode("\n", $o);
+?>
+
+</div>
+
+<div>
+{{message}}
+
+</div>
+
+<script src="{% static 'command.js' %}"></script>
+</div>
+</div>
+</div>
+	
+{% endblock %}
+	
