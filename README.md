@@ -1,2 +1,0 @@
-# FJMbot
-# FJM_bot
